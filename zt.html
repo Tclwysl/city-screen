@@ -1,0 +1,1071 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="css/BigData.css" rel="stylesheet" type="text/css" />
+	<!-- <link href="css/zhtc.css" rel="stylesheet" type="text/css" /> -->
+    <link href="css/index.css" rel="stylesheet" type="text/css" />
+    <link href="css/index01.css" rel="stylesheet" type="text/css" />
+    <script src="js/jquery.js"></script>
+    <link href="js/bstable/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="js/bstable/css/bootstrap-table.css" rel="stylesheet" type="text/css" />
+    <link href="css/Security_operation.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="js/artDialog/skins/default.css" type="text/css"/>
+    <script src="js/laydate.js"></script>
+    <script src="js/Home_page.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
+    <meta charset="UTF-8">
+    <title>总体</title>
+
+</head>
+<body >
+<div class="data_bodey">
+    <div class="index_nav" >
+	<ul style="height: 30px; margin-bottom: 0px;padding-left:200px;padding-right:200px;">
+            <li class="l_left total_chose_fr"> </li>
+             <li class="l_left total_chose_pl" style="display: none;"> </li> 
+			 <li class="l_left total_chose_pl"> </li> 
+			 <li class="r_right total_chose_pl" style=""> </li> 
+            <li class="r_right total_chose_pl"> </li>
+            <!-- <li class="r_right total_chose_pl">勘察设计</li> -->
+			
+        </ul>
+	<div class="total_chose_box" style="margin:-10px 0% !important">
+           
+        </div>
+        <div class="clear"></div>
+	
+	
+	
+	
+	
+	<div class="index_tabs" >
+	
+	
+	
+	
+	
+        <div class="inner" style="">
+       <!-- 一页 -->
+			<div class="data_left01">
+                <div class="dataAll maginS">
+                    <div class="dataAllBorder01">
+                        <div class="dataAllBorder02">
+                          <!--   <div class="data_tit1">实时视频</div> -->
+                            <!-- <p class="data_chart" id="track1" ></p> -->
+							<div class="t_top_box" style="height:100%;width:100%;position: relative;top: -10%;">
+
+							<ul class="t_nav1">
+							<li>
+								<h1>全市总停车位</h1>
+								<span>11155</span>
+								<i></i>
+							</li>
+							<li>
+								<h1>全市总车位</h1>
+								<span>3203101</span>
+								<i></i>
+							</li>
+							<li>
+								<h1>全市剩余车位</h1>
+								<span>15089/94210</span>
+								<i>总接入数</i>
+							</li>
+							<li>
+								<h1>总车位的剩余容量</h1>
+								<span>16.02%</span>
+								<i>接入</i>
+							</li>
+							 </ul>
+						</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dataAll">
+                    <div class="dataAllBorder01">
+                        <div class="dataAllBorder02">
+                            <div class="data_tit1">站点高峰客流</div>
+                            <p class="data_chart" id="track11"  style="height:100%;width:100%;"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="dataAll">
+                    <div class="dataAllBorder01">
+                        <div class="dataAllBorder02">
+                            <div class="data_tit1">道路建设项目</div>
+                            <p class="data_chart" id="roadcons11" style="height:90%;width:100%;"></p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="data_left01">
+                <div class="dataAll maginS">
+                    <div class="dataAllBorder01">
+                        <div class="dataAllBorder02">
+                            <div class="data_tit1">工程勘察信息</div>
+                            <p class="data_chart" id="urbanrd2"  style="height:90%;width:100%;"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="dataAll">
+                    <div class="dataAllBorder01">
+                        <div class="dataAllBorder02">
+                            <div class="data_tit1">城市道路类型饼图</div>
+                            
+							<p class="data_chart" id="urbanrd1" style="height:90%;width:100%;"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="dataAll">
+                    <div class="dataAllBorder01">
+                        <div class="dataAllBorder02">
+                            <div class="data_tit1">建设项目管理</div>
+							<p class="data_chart" id="jgdwtj" style="height:100%;width:100%;"></p>
+                            
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="data_left02">
+                <div class="dataAll01">
+                    <div class="dataAllBorder01">
+                        <div class="dataAllBorder02">
+                            <div class="data_tit2">实时地图</div>
+							<div class="map" id="map1" style="height:95%" ></div>
+                           
+
+                        </div>
+                    </div>
+                </div>
+                <div class="dataAll02">
+                    <div class="dataAllBorder01">
+                        <div class="dataAllBorder02">
+                            <div class="data_tit1">统计</div>
+                            <!-- <p class="data_chart" id="rodeAbook"></p> -->
+							<table class="table_data01 tjbg">
+                                <tr>
+                                    <td>地形信息（工程项目总数）</td><td colspan="3" class="font04">151851</td>
+                                </tr>
+                                <tr>
+                                    <td>BIM信息集成（项目总数）</td><td colspan="3" class="font04">262</td>
+                                </tr>
+								 <tr>
+									<td>工程勘察信息（工程项目）</td><td class="font04">25846</td>
+								</tr>
+								<tr>
+									<td>工程勘察信息（钻孔）</td><td class="font04">803782</td>
+								</tr>
+								<tr>
+									<td>城市道路信息（现状道路）</td><td class="font04">1843</td>
+								</tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="data_left01">
+                <div class="dataAll maginS">
+                    <div class="dataAllBorder01">
+                        <div class="dataAllBorder02">
+                            <!-- <div class="data_tit1"></div> -->
+                            <!-- <p class="data_chart" id="seaAbook01"></p> -->
+							<div class="utilitytunnel-top1" style="">
+						<ul style="">
+							<li>总览</li>
+							<li>详情</li>
+							<li>项目</li>
+							<li>管理</li>
+						</ul>
+
+
+						</div>
+						<div class="utilitytunnel-bottom1">
+							
+						<div class="utilitytunnel-bottom-sm1">
+						<!-- <img src=" " /> -->
+							<span class="glyphicon glyphicon-fire" aria-hidden="true"></span>
+							火灾报警
+							<div>/19个</div>
+							<div class="redred">7个</div>
+							
+						</div>
+						<div class="utilitytunnel-bottom-sm1">
+							<!-- <img src="url" /> -->
+							<span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>
+							管廊环境
+							<div>/19个</div>
+							<div class="redred">7个</div>
+							
+						</div>
+						<div class="utilitytunnel-bottom-sm1">
+							<!-- <img src=" " /> -->
+							<span class="glyphicon glyphicon-warning-sign" aria-hidden="true"></span>
+							非法入侵
+							<div>/3个</div>
+							<div class="redred">1个</div>
+							
+						</div>
+						<div class="utilitytunnel-bottom-sm1" style="border:none;">
+							<!-- <img src="url" /> -->
+							<span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
+							廊体健康
+							<div>/7个</div>
+							<div>0</div>
+							
+						</div>
+						<div class="utilitytunnel-bottom-sm1">
+							<!-- <img src="url" /> -->
+							<span class="glyphicon glyphicon-th-list" aria-hidden="true"></span>
+							基础设备
+							<div>/6个</div>
+							<div class="blueblue">5个</div>
+							
+						</div>
+						<div class="utilitytunnel-bottom-sm1">
+							<!-- <img src="url" /> -->
+							<span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
+							巡检任务
+							<div>/4项</div>
+							<div class="blueblue">2项</div>
+							
+						</div>
+						<div class="utilitytunnel-bottom-sm1">
+							<!-- <img src="url" /> -->
+							<span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+							人员信息
+							<div>/3人</div>
+							<div class="blueblue">3人</div>
+							
+						</div>
+						<div class="utilitytunnel-bottom-sm1">
+							<!-- <img src="url" /> -->
+							<span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>
+							视频监控
+							<div>/8个</div>
+							<div class="blueblue">6个</div>
+							
+						</div>
+
+
+
+					</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dataAll">
+                    <div class="dataAllBorder01">
+                        <div class="dataAllBorder02">
+                            <div class="data_tit1">城市地下管线</div>
+                            <p class="data_chart" id="under-pipelines1" style="height:90%;width:100%;"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="dataAll">
+                    <div class="dataAllBorder01">
+                        <div class="dataAllBorder02">
+                            <div class="data_tit1">海绵城市监测</div>
+                            <p class="data_chart" id="spongemonitor1" style="height:90%;width:100%;"></p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+			       <!-- 一页 -->
+        </div>
+    </div>
+	</div>
+</div>
+
+
+        
+<script src="js/echarts-all.js"></script>
+<script src="js/index.js"></script>
+<script src="js/bstable/js/bootstrap.min.js"></script>
+<script src="js/bstable/js/bootstrap-table.js"></script>
+<script type="text/javascript" src="js/jquery.pagination.js"></script>
+<script src="js/bstable/js/bootstrap-table-zh-CN.min.js"></script>
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=5ieMMexWmzB9jivTq6oCRX9j&callback"></script>
+
+    <!--<script src="js/MainMap.js"></script>-->
+<script src="js/Home_page.js"></script>
+<script src="js/artDialog/artDialog.js"></script>
+<script src="js/artDialog/plugins/iframeTools.source.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script> 
+
+
+<style>
+/*去除地图水印*/
+.anchorBL{
+    display:none;
+}
+	.t_nav li{
+		float:left;
+		width: 25%;
+		height: 100%;
+		text-align: center;
+		margin-top:5%;
+	}
+
+	.t_nav li h1{
+		font-size:25px !important;
+		color:#fff;
+	}
+
+	.t_nav li span{
+		font-size:19px !important;
+		color:#58abfffa;
+	}
+	.t_nav li i{
+		margin-top:7px;
+        position:absolute; 
+		color:#ffb97c;
+		font-style:normal;
+		font-size:9px !important;
+	}
+
+.t_nav1 li{
+		float:left;
+		width: 50%;
+		height: 100%;
+		text-align: center;
+		margin-top:5%;
+		margin-left:0%;
+
+	}
+
+	.t_nav1 li h1{
+		font-size:18px !important;
+		color:#fff;
+	}
+
+	.t_nav1 li span{
+		font-size:15px !important;
+		color:#58abfffa;
+	}
+	.t_nav1 li i{
+		margin-top:4px;
+        position:absolute; 
+		color:#ffb97c;
+		font-style:normal;
+		font-size:7px !important;
+	}
+
+	
+.tjbg{
+	width:95%;
+	height:90%;
+	margin-top:0%;
+
+	<!-- margin-left:-4%; -->
+}
+	
+ .tjbg td{
+	width:50%;
+	text-align:center;
+		height:4%;
+	<!-- font-size:20px; -->
+		padding:0% !important;
+ }
+
+ .tjbg tr{
+	height:4%;
+ }
+
+
+
+	.utilitytunnel-top{
+		width:100%;
+		height:10%;
+	}
+	.utilitytunnel-top ul{
+		width:100%;
+		height:100%;
+		border-bottom:1px solid #eeeeee82;
+	}
+	.utilitytunnel-top li{
+		width:25%;
+		height:100%;
+		float:left;
+		line-height:55px;
+		 text-align:center;
+		color:#00ffd0;
+		font-weight:bolder;
+		font-size:18px;
+	}
+	.utilitytunnel-top li:hover{
+		cursor:pointer;
+		color:#fff;
+	}
+	.utilitytunnel-bottom{
+		width:100%;
+		height:90%;
+		float:left;
+	}
+
+	.utilitytunnel-bottom :nth-child(4){
+		border-bottom:1px solid #eeeeee82;
+	}
+
+	.utilitytunnel-bottom-sm{
+		width:100%;
+		height:11%;
+		margin-top:2px;
+		padding:3% 12%;
+		font-size:14px;
+		line-height:20px;
+		color:#f5f5f5;
+		
+	}/* 
+	:nth-child(2) */
+
+	.utilitytunnel-bottom-sm span{
+		width:25px;
+		height:25px;
+		/* margin:1px 1px 5px 5px; */
+		font-size: 25px;
+		color:#33b2ee;
+		display:block;
+		float:left;
+		position:relative;
+		top:-2px;
+		margin-right:5px;
+	}
+
+	.utilitytunnel-bottom-sm div{
+		float:right ;
+	}
+
+	.blueblue{
+		color:#58abfffa;
+	}
+
+	.redred{
+		color:red;
+	}
+	
+	<!--********************-->
+	
+	.utilitytunnel-top1{
+		width:100%;
+		height:5%;
+	}
+	.utilitytunnel-top1 ul{
+		width:100%;
+		height:100%;
+		border-bottom:1px solid #eeeeee82;
+	}
+	.utilitytunnel-top1 li{
+		width:25%;
+		height:100%;
+		float:left;
+		line-height:18px;
+		 text-align:center;
+		color:#00ffd0;
+		font-weight:bolder;
+		font-size:18px;
+		display:block;
+		border-bottom:1px solid #eeeeee82;
+	}
+	.utilitytunnel-top1 li:hover{
+		cursor:pointer;
+		color:#fff;
+	}
+	.utilitytunnel-bottom1{
+		width:100%;
+		height:90%;
+		float:left;
+	}
+
+	.utilitytunnel-bottom1 :nth-child(4){
+		border-bottom:1px solid #eeeeee82;
+	}
+
+	.utilitytunnel-bottom-sm1{
+		width:100%;
+		height:11%;
+		margin-top:2px;
+		padding:0% 15%;
+		font-size:14px;
+		line-height:20px;
+		color:#f5f5f5;
+		
+	}
+
+	.utilitytunnel-bottom-sm1 span{
+		<!-- //width:25px; -->
+		<!-- //height:25px; -->
+		/* margin:1px 1px 5px 5px; */
+		font-size: 25px;
+		color:#33b2ee;
+		<!-- display:block; -->
+		float:left;
+		<!-- position:relative; -->
+		<!-- top:-2px; -->
+		margin-right:5px;
+	}
+
+	.utilitytunnel-bottom-sm1 div{
+		float:right ;
+	}
+	
+	
+	
+	
+	
+	
+
+</style>
+
+
+<script type="text/javascript">
+
+var dom = document.getElementById("spongemonitor1");
+var myChart = echarts.init(dom);
+var app = {};
+
+var option;
+
+option = {
+    title: {
+        text: '海绵城市监测系统',
+        subtext: '实时概况图',
+		textStyle: {
+		color : "#fff"
+	}
+    },
+    tooltip: {
+        trigger: 'axis',
+        axisPointer: {
+            type: 'shadow'
+        }
+    },
+    legend: {
+        data: ['在线', '离线'],
+		textStyle: {
+		color : "#fff"
+	}
+    },
+    grid: {
+        left: '3%',
+        right: '4%',
+        bottom: '3%',
+        containLabel: true
+    },
+    xAxis: {
+        type: 'value',
+        boundaryGap: [0, 0.01],
+		axisLabel:{
+			textStyle: {
+				color: "rgba(255, 255, 255, 1)"
+			}
+		},
+		splitLine:{show: false}
+	},
+    yAxis: {
+        type: 'category',
+        data: ['径流', '雨量', '水质', '回用', '下穿'],
+		axisLabel:{
+			textStyle: {
+				color: "rgba(255, 255, 255, 1)"
+			}
+		},
+		splitLine:{show: false}
+	},
+    series: [
+        {
+            name: '在线',
+            type: 'bar',
+            data: [ 18, 3, 1, 3, 3]
+        },
+        {
+            name: '离线',
+            type: 'bar',
+            data: [ 17, 2, 1, 0, 2.5]
+        }
+    ]
+};
+
+if (option && typeof option === 'object') {
+    myChart.setOption(option);
+}
+
+    </script>
+
+
+
+<script type="text/javascript">
+var dom = document.getElementById("under-pipelines1");
+var myChart = echarts.init(dom);
+var app = {};
+
+var option;
+
+
+
+option = {
+	title: {
+        text: '城市地下管线信息',
+        subtext: '管线状态图',
+		textStyle: {
+		color : "#fff"
+	}
+    },
+    grid: {
+        left: '3%',
+        right: '4%',
+        bottom: '3%',
+        containLabel: true
+    },
+    tooltip: {
+        trigger: 'axis',
+        axisPointer: {
+            type: 'cross',
+            crossStyle: {
+                color: '#fff'
+            }
+        }
+    },
+    toolbox: {
+        feature: {
+            dataView: {show: true, readOnly: false},
+            magicType: {show: true, type: ['line', 'bar']},
+            restore: {show: true},
+            saveAsImage: {show: true}
+        }
+    },
+    xAxis: [
+        {
+            type: 'category',
+            data: ['燃气', '电信', '电力', '给水', '雨污', '污水', '雨水'],
+            axisPointer: {
+                type: 'shadow'
+            },
+			axisLabel:{
+			textStyle: {
+				color: "rgba(255, 255, 255, 1)"
+			}
+		},
+		splitLine:{show: false}
+
+        }
+    ],
+    yAxis: [
+        {
+            type: 'value',
+            
+            axisLabel: {
+                formatter: '{value} '
+            },
+			axisLabel:{
+			textStyle: {
+				color: "rgba(255, 255, 255, 1)"
+			}
+			},
+		splitLine:{show: false}
+        }
+    ],
+    series: [
+        {
+            name: '  ',
+			itemStyle:{
+                        normal:{color:'#67ecce'}
+                    },
+            type: 'bar',
+            data: [7991,13,893,18135,10138,6213,6616]
+        }
+    ]
+};
+
+if (option && typeof option === 'object') {
+    myChart.setOption(option);
+}
+
+	</script>
+
+<script>
+    // 百度地图API功能
+    var map = new BMap.Map("map1");    // 创建Map实例
+    map.centerAndZoom(new BMap.Point(106.583541,29.563475), 13);  // 初始化地图,设置中心点坐标和地图级别
+    //添加地图类型控件
+    map.addControl(new BMap.MapTypeControl({
+        mapTypes:[
+			BMAP_HYBRID_MAP,
+            BMAP_NORMAL_MAP
+            
+        ]}));
+    var mapStyle={
+      
+    };
+    map.setMapStyle(mapStyle);
+    map.setCurrentCity("北京市");          // 设置地图显示的城市 此项是必须设置的
+    map.enableScrollWheelZoom(true);
+	map.setMapType(BMAP_NORMAL_MAP);
+</script>
+
+
+
+<script type="text/javascript">
+
+//站点高峰
+
+var chartDom = document.getElementById('track11');
+var myChart = echarts.init(chartDom);
+var option;
+
+option = {
+    title: {
+        text: '站点高峰客流',
+        subtext: '客流：万人次',
+		textStyle: {
+		color : "#fff"
+	}
+    },
+    tooltip: {
+        trigger: 'axis',
+        axisPointer: {            // 坐标轴指示器，坐标轴触发有效
+            type: 'shadow'        // 默认为直线，可选为：'line' | 'shadow'
+        },
+        formatter: function (params) {
+            var tar = params[1];
+            return tar.name + '<br/>' + tar.seriesName + ' : ' + tar.value;
+        }
+    },
+    grid: {
+        left: '3%',
+        right: '4%',
+        bottom: '3%',
+        containLabel: true,
+		splitLine: {show: false},
+    },
+    xAxis: {
+        type: 'category',
+        splitLine: {show: false},
+		
+		
+        data: ['总客流','红旗河沟','两路口','大坪','冉家坝','沙坪坝'],
+                    axisLabel : {
+                        formatter: '{value} ',
+                        textStyle: {
+                            color: '#a4a7ab',
+                            align: 'right'
+                        },
+						 interval: 0,  
+                               formatter:function(value)  
+                               {  
+                                   return value.split("").join("\n");  
+                               }  
+                    }
+    },
+    yAxis: {
+        type: 'value',
+        splitLine: {show: false},
+		axisLabel:{
+			textStyle: {
+				color: "rgba(255, 255, 255, 1)"
+			}
+			},
+    },
+    series: [
+        {
+                    name:'总客流',
+                    type:'bar',
+                    stack: '总量',
+                    itemStyle:{
+                        normal:{
+                            barBorderColor:'rgba(0,0,0,0)',
+                            color:'rgba(0,0,0,0)'
+                        },
+                        emphasis:{
+                            barBorderColor:'rgba(0,0,0,0)',
+                            color:'rgba(0,0,0,0)'
+                        }
+                    },
+                    data:[0, 184, 115, 65, 30, 0]
+                },
+                {
+                    name:'客流',
+                    type:'bar',
+                    stack: '总量',
+                    data:[254, 70, 69, 50, 35, 30],
+                    itemStyle: {
+                        normal: {
+                            color: '#2481ff'
+                        }
+                    }
+                }
+    ]
+};
+
+if (option && typeof option === 'object') {
+//myChart.resize();
+    myChart.setOption(option);
+	
+}
+
+</script>
+
+
+<script type="text/javascript">
+var chartDom = document.getElementById('urbanrd1');
+var myChart = echarts.init(chartDom);
+var option;
+
+option = {
+    title: {
+        text: '道路类型饼图',
+        left: 'left',
+		textStyle: {
+		color : "#fff"
+	}
+    },
+    tooltip: {
+        trigger: 'item'
+    },
+    legend: {
+        orient: 'vertical',
+        right: 'right',
+		
+		textStyle: {
+		color : "#fff"
+	}
+    },
+    series: [
+        {
+            name: '道路类型',
+            type: 'pie',
+            radius: '70%',
+            data: [
+                {value: 1048, name: '新开工'},
+                {value: 321, name: '现状'},
+                {value: 128, name: '续建'},
+                {value: 346, name: '规划'}
+            ],
+            emphasis: {
+                itemStyle: {
+                    shadowBlur: 10,
+                    shadowOffsetX: 0,
+                    shadowColor: 'rgba(0, 0, 0, 0.5)'
+                }
+            }
+        }
+    ]
+};
+
+if (option && typeof option === 'object') {
+    myChart.setOption(option);
+}
+
+    </script>
+
+<script type="text/javascript">
+var chartDom = document.getElementById('jgdwtj');
+var myChart = echarts.init(chartDom);
+var option;
+
+option = {
+    title: {
+        text: '建管单位统计',
+		textStyle: {
+		color : "#fff"
+	}
+    },
+    xAxis: {
+        type: 'category',
+        data: ['1月', '2月', '3月', '4月', '5月', '6月'],
+		splitLine:{show: false},axisLabel:{
+			textStyle: {
+				color: "rgba(255, 255, 255, 1)"
+			}
+		},
+    },
+    legend: {
+        data: ['新建', '续建'],
+		textStyle: {
+		color : "#fff"
+	}
+    },
+    tooltip: {
+        trigger: 'axis'
+    },
+    yAxis: {
+        type: 'value',
+		splitLine:{show: false},axisLabel:{
+			textStyle: {
+				color: "rgba(255, 255, 255, 1)"
+			}
+		},
+    },
+    series: [{
+        name: '新建',
+        data: [39, 33, 21, 17, 49, 38],
+        type: 'line'
+    },{
+        name: '续建',
+        data: [15, 43, 13, 22, 20, 1],
+        type: 'line'
+    }]
+};
+
+if (option && typeof option === 'object') {
+    myChart.setOption(option);
+}
+
+    </script>
+
+<script type="text/javascript">
+var chartDom = document.getElementById('urbanrd2');
+var myChart = echarts.init(chartDom);
+var option;
+
+option = {
+    title: {
+        text: ' ',
+        left: '10%',
+		textStyle: {
+		color : "#fff"
+	}
+    },
+    tooltip: {
+        trigger: 'item'
+    },
+    legend: {
+        orient: 'vertical',
+        right: 'right',
+		textStyle: {
+		color : "#fff"
+	}
+    },
+    series: [
+        {
+            name: '工程勘察信息',
+            type: 'pie',
+            radius: '70%',
+            data: [
+                {value: 1908, name: '城市道路'},
+                {value: 701, name: '建构筑物'},
+                {value: 508, name: '地表覆盖'},
+                {value: 1006, name: '行政区域'}
+            ],
+            emphasis: {
+                itemStyle: {
+                    shadowBlur: 10,
+                    shadowOffsetX: 0,
+                    shadowColor: 'rgba(0, 0, 0, 0.5)'
+                }
+            }
+        }
+    ]
+};
+
+if (option && typeof option === 'object') {
+    myChart.setOption(option);
+}
+
+    </script>
+
+
+
+<script type="text/javascript">
+        var chartDom = document.getElementById('roadcons11');
+var myChart = echarts.init(chartDom);
+var option;
+
+option = {
+    title: {
+        text: ' ',
+		textStyle: {
+		color : "#fff"
+	}
+    },
+    tooltip: {
+        trigger: 'axis'
+    },
+    legend: {
+        data: [ '项目数量', '延期项目数量', '停工项目数量'],
+			
+			textStyle: {
+				color: "rgba(255, 255, 255, 1)"
+			
+		},
+			left:"15%"
+    },
+    grid: {
+        left: '3%',
+        right: '4%',
+        bottom: '3%',
+		top:'10%',
+        containLabel: true
+    },
+    toolbox: {
+        feature: {
+            saveAsImage: {}
+        }
+    },
+    xAxis: {
+        type: 'category',
+        boundaryGap: false,
+        data: ['','市级区管', '市级重点', '市管项目', '区管项目',''],
+                    splitLine:{show: false},
+			axisLabel:{
+			textStyle: {
+				color: "rgba(255, 255, 255, 1)"
+			}
+		},
+                    axisLabel : {
+                        formatter: '{value} ',
+                        textStyle: {
+                            color: '#a4a7ab',
+                            align: 'right'
+                        },
+						 interval: 0,  
+                               formatter:function(value)  
+                               {  
+                                   return value.split("").join("\n");  
+                               }  
+                    }
+    },
+    yAxis: {
+        type: 'value',
+			axisLabel:{
+			textStyle: {
+				color: "rgba(255, 255, 255, 1)"
+			}
+		},
+                    splitLine:{show: false},
+    },
+    series: [
+        {
+            name: '项目数量',
+            type: 'line',
+            data: [, 38, 28, 3, 262,]
+        },
+        {
+            name: '延期项目数量',
+            type: 'line',
+            data: [,22, 28, 1, 262,]
+        },
+        {
+            name: '停工项目数量',
+            type: 'line',
+            data: [,0,0,0,0,]
+        }
+    ]
+};
+
+if (option && typeof option === 'object') {
+    myChart.setOption(option);
+}
+
+</script>
+
+
+
+
+
+
+
+</body>
+</html>
